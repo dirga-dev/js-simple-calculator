@@ -1,0 +1,127 @@
+:root {
+	/* COLORS */
+	--background: #444444;
+	--keyButton: #fffdfa;
+	--display: #000000;
+
+	/* SIZING */
+	--keyFont: 22px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background-color: var(--background);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator {
+	width: 50%;
+	border-radius: 15px;
+	overflow: hidden;
+	text-align: right;
+}
+
+.display {
+	width: 100%;
+	height: 20vh;
+	background: var(--display);
+	color: var(--keyButton);
+}
+
+.input {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button {
+	border: none;
+	background-color: var(--keyButton);
+	padding: 1.6rem;
+	font-size: var(--keyFont);
+	transition: all 0.1s ease-in-out;
+}
+
+button:hover {
+	font-weight: bold;
+}
+
+.output {
+	font-size: 25px;
+	padding: 20px;
+}
+
+.result {
+	font-size: 18px;
+	padding: 20px;
+}
+
+@keyframes big {
+	0% {
+		font-size: 18px;
+	}
+	100% {
+		font-size: 30px;
+	}
+}
+
+@keyframes small {
+	0% {
+		font-size: 25px;
+	}
+	100% {
+		font-size: 18px;
+	}
+}
+
+.input {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button {
+	border: none;
+	background-color: white;
+	padding: 1.6rem;
+	font-size: 22px;
+	transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+	font-weight: bold;
+}
+
+.output {
+	font-size: 28px;
+	padding: 25px;
+}
+
+.result {
+	font-size: 18px;
+	padding: 25px;
+}
+
+@keyframes big {
+	0% {
+		font-size: 18px;
+	}
+	100% {
+		font-size: 30px;
+	}
+}
+
+@keyframes small {
+	0% {
+		font-size: 28px;
+	}
+	100% {
+		font-size: 18px;
+	}
+}
