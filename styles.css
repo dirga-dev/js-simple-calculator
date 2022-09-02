@@ -2,6 +2,7 @@
 	/* COLORS */
 	--background: #444444;
 	--keyButton: #fffdfa;
+	--keyButton-hover: #d3d3d3;
 	--display: #000000;
 
 	/* SIZING */
@@ -51,6 +52,7 @@ button {
 
 button:hover {
 	font-weight: bold;
+	background-color: var(--keyButton-hover);
 }
 
 .output {
